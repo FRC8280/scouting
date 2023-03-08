@@ -2,7 +2,7 @@
   <FormPage title="Team Selection" ref="page">
     <p>Test Code</p>
     <FormGroup :label-type="LabelType.LabelTag" id="event-key-input" name="Event Key">
-      <input id="event-key-input" type="text" v-model="eventKey" @keyup.enter="loadTBAData" />
+      <input default="ohshit" id="event-key-input" type="text" v-model="eventKey" @keyup.enter="loadTBAData" />
       <button @click="loadTBAData">Load</button>
     </FormGroup>
     <FormGroup :label-type="LabelType.PlainText" name="Teams Loaded">{{ teamsLoadStatus }}</FormGroup>
