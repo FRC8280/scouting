@@ -1,6 +1,12 @@
 <template>
   <h1>Motor City Alliance Scouting</h1>
   <h2>Form Selection</h2>
+
+  <p>Welcome to the Detroit Community Scouting Application. This Application is provided by Team 8280 K9.0 Robotics, one of the 
+    leadership teams of the Motor City Alliance. The tools was adapted from and is powered by the scouting application
+    authored the Bionic Blackhawks team 2834 (https://team2834.com/).</p>
+
+    <p>Event IDs</p>
   <ul v-if="list.length > 0" class="link-list">
     <li v-for="[i, name] of list.entries()" :key="i">
       <RouterLink :to="{ name: 'form', query: { name } }">{{ name }}</RouterLink>
